@@ -177,6 +177,12 @@
             mapContainer.style.display = 'none'; // Esconde o mapa
         }
     });
+
+    document.querySelectorAll('.links').forEach(function(link) {
+    link.addEventListener('click', function() {
+        link.blur(); // Remove o foco do link
+    });
+});
 </script>
 </body>
 </html>
