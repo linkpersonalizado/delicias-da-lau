@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="brigadeiro.ico" type="image/x-icon">
+    <title>Delicias da Lau</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+    
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    ::-webkit-scrollbar {width: 0px; height: 0px;}
+
+    body {
+        position: relative;
+        background-image: url(imagens/fundo.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    div.fundo-logo {
+        display: inline;
+        position: absolute;
+        width: 268px;
+        height: 125px;
+        top: 18px;
+        left: 50%;
+        transform: translate(-50%);
+        border-radius: 50%;
+        box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.350);
+    }
+
+    .container {
+        position: relative;
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+        width: 300px;
+    }
+
+    div#menu-salgados {
+        text-align: center;
+        background-color: #fdf0f2b6;
+        width: 300px;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 16px;
+        padding-bottom: 15px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.363);
+        
+    }
+
+    div h1 {
+        margin: 10px;
+        padding-top: 10px;
+        font-family: "Delius", system-ui;
+        color: #552D28;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.150);
+        text-decoration: underline;
+    }
+
+    div ul {
+        font-family: "Delius", system-ui;
+        font-size: 1.2em;
+        font-weight: 600;
+        color: #552D28;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.100);
+        
+        list-style:none ;
+    }
+
+    div li.produtos {
+        margin: 12px;
+    }
+
+    .valor {
+        font-family: "Titillium Web", sans-serif;
+        font-size: 1.4em;
+        font-weight: bold;
+    }
+
+    div a.link {
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 1.6em;
+        background-color: #00c8ff;
+        color: white;
+        text-decoration: none;
+        width: 200px;
+        padding: 10px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.308);
+    }
+
+    div a.link:hover, div a.link:focus {
+        background-color: #4dd8ff;
+        color: white;
+        text-decoration: underline;
+    }
+
+    div a.link:active {
+        background-color: #FFE5E9;
+        color: #552D28;
+        text-decoration: none;
+    }
+
+
+#infoIcon {
+    font-size: 23px;
+    cursor: pointer;
+    text-decoration: none;
+    color: rgba(3, 138, 216, 0.897);
+}
+
+.balloon {
+    display: none;
+    position: absolute;
+    top: 83%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f3f2f2;
+    color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+    white-space: nowrap; /* Evita quebra de linha */
+    z-index: 1000; /* Aparece sobre outros elementos */
+}
+
+.balloon::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #f3f2f2 transparent;
+}
+
+div li.lballoon {
+    color: rgb(54, 54, 54);
+    font-size: 13.5px;
+    padding: 2px;
+}
+
+div#icones {
+    margin: auto;
+    width: 134px;
+}
+
+div > a > img {
+    display: inline-block;
+    margin: auto;
+    width: 45px;
+    padding: 0px 10px;
+    margin-bottom: 20px;
+}
+
+</style>
+
+</head>
+<body>
+    <div class="fundo-logo"></div>
+
+    </div>
+    <div>
+        <img src="imagens/logo.png" alt="Logo" class="container">
+    </div>
+    <div id="menu-salgados">
+        <h1>Doces tradicionais</h1>
+        <ul>
+            <li class="produtos">Amendoim</li>
+            <li class="produtos">Brigadeiro</li>
+            <li class="produtos">Beijinho</li>
+            <li class="produtos">Casadinho</li>
+            <li class="produtos">Leite ninho</li>
+            <li class="produtos">Nesquik</li>
+            <li class="produtos">Prestígio</li>
+        </ul>
+        <p class="valor">R$:95,00 o cento</p>
+        <p class="valor">R$:50,00 meio cento <a href="#" id="infoIcon">&#x1F6C8;</a></p>
+    <div id="infoBalloon" class="balloon">
+        <ul>
+            <li class="lballoon">100 doces até quatro sabores, 25 de cada.</li>
+            <li class="lballoon">50 doces até dois sabores, 25 de cada.</li>
+            <li class="lballoon">Para as forminhas, consultar estoque.</li>
+        </ul>
+    </div>
+    <a href="https://api.whatsapp.com/send?phone=554896168414&fbclid=PAZXh0bgNhZW0CMTEAAaY_GuKrPnXuazreB4-X44MFfcT731FeBbJEt2nX4mUcUSfFK_SuvIY2zPg_aem_b7CmHCEOiO_e-aYojd6bKA" target="_blank" class="link">Faça já seu pedido!</a>
+    </div>
+    <div id="icones">
+        <a href="menu-catalogo.html"><img src="imagens/botao-volte.png" alt="Botão voltar"></a>
+        <a href="index.html"><img src="imagens/botao-home.png" alt="Botão Home"></a>
+    </div>
+
+    <script>
+        const infoIcon = document.getElementById('infoIcon');
+const infoBalloon = document.getElementById('infoBalloon');
+
+infoIcon.addEventListener('click', function(event) {
+    event.preventDefault();
+    infoBalloon.style.display = 'block';  // Mostra o balão de informações
+});
+
+document.addEventListener('click', function(event) {
+    if (event.target !== infoIcon && event.target !== infoBalloon) {
+        infoBalloon.style.display = 'none';  // Esconde o balão ao clicar fora
+    }
+});
+        
+    </script>
+</div>
+</body>
+</html>

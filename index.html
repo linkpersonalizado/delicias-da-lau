@@ -31,10 +31,23 @@
         background-size: cover;
     }
 
+    div#fundo-logo {
+        display: inline;
+        position: absolute;
+        width: 268px;
+        height: 125px;
+        top: 18px;
+        left: 50%;
+        transform: translate(-50%);
+        border-radius: 50%;
+        box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.350);
+    }
+
     .container {
+        position: relative;
         display: block;
         margin: auto;
-        margin-top: 50px;
+        margin-top: 20px;
         width: 300px;
     }
 
@@ -56,25 +69,11 @@
         color: #552D28;
         background-color: #FFE5E9;
         border-radius: 25px;
-        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.233);
-        text-shadow: 0px 0px 2px rgba(83, 83, 83, 0.151);
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.250);
+        text-shadow: 0px 0px 2px rgba(83, 83, 83, 0.150);
         border: 2px solid transparent;
         animation: teste 1.5s;
         z-index: 2;
-    }
-
-    .links:focus {
-        background-color: #FFADB9;
-        color:white;
-        text-decoration: underline;
-        transition-duration: 0.2s;
-        border: 2px solid white;
-    }
-
-    .links:active {
-        color: #552D28;
-        background-color: #FFE5E9;
-        border: 2px solid white;
     }
 
     #container2 {
@@ -141,12 +140,15 @@
 
 </head>
 <body>
+    <div id="fundo-logo"></div>
+
+    </div>
 <div>
     <img src="imagens/logo.png" alt="Logo" class="container">
 </div>
 <div id="container1">
     <a href="https://api.whatsapp.com/send?phone=554896168414&fbclid=PAZXh0bgNhZW0CMTEAAaY_GuKrPnXuazreB4-X44MFfcT731FeBbJEt2nX4mUcUSfFK_SuvIY2zPg_aem_b7CmHCEOiO_e-aYojd6bKA" target="_blank" class="links">WhatsApp</a>
-    <a href="#" target="_blank" class="links">Catálogo</a>
+    <a href="menu-catalogo.html" target="_self" class="links">Catálogo</a>
     <a href="#" target="_blank" class="links" id="maps">Nossa localização</a>
     <a href="https://www.google.com/search?q=delicias+da+lau&sca_esv=8d507574ebaa0a20&sca_upv=1&authuser=1&sxsrf=ADLYWIIL672W29TGKNmNh27r6uygDBQnSA%3A1724894358560&source=hp&ei=lszPZs2rIIff1sQP4dPYiAU&iflsig=AL9hbdgAAAAAZs_aplp6NSQkDaV2Pa1uOM9jGOfQ2p9h&oq=deli&gs_lp=Egdnd3Mtd2l6IgRkZWxpKgIIADIKECMYgAQYJxiKBTIKEAAYgAQYQxiKBTILEAAYgAQYsQMYyQMyCxAuGIAEGMcBGK8BMgsQABiABBiSAxiKBTILEAAYgAQYkgMYigUyCBAAGIAEGLEDMggQABiABBixAzIKEAAYgAQYQxiKBTIIEAAYgAQYsQNIvwhQAFjMA3AAeACQAQCYAY8BoAGtBKoBAzAuNLgBA8gBAPgBAZgCBKACvQTCAgwQABiABBhDGIoFGArCAgsQABiABBixAxiDAcICBRAAGIAEwgIFEC4YgATCAggQLhiABBixA8ICERAuGIAEGLEDGNEDGIMBGMcBmAMAkgcDMC40oAfYJQ&sclient=gws-wiz#lrd=0x9527351c10aba45b:0xf99968f0fe2af3dc,3,,,," target="_blank" class="links"> Nos avalie no Google</a>
 </div>
@@ -177,12 +179,6 @@
             mapContainer.style.display = 'none'; // Esconde o mapa
         }
     });
-
-    document.querySelectorAll('.links').forEach(function(link) {
-    link.addEventListener('click', function() {
-        link.blur(); // Remove o foco do link
-    });
-});
 </script>
 </body>
 </html>
