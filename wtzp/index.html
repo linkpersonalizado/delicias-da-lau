@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="brigadeiro.ico" type="image/x-icon">
+    <title>Delicias da Lau</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+
+    @keyframes teste {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body {
+        position: relative;
+        background-image: url(imagens/fundo.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    div#fundo-logo {
+        display: inline;
+        position: absolute;
+        width: 268px;
+        height: 125px;
+        top: 18px;
+        left: 50%;
+        transform: translate(-50%);
+        border-radius: 50%;
+        box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.350);
+    }
+
+    .container {
+        position: relative;
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+        width: 300px;
+    }
+
+    #container1 {
+        margin: auto;
+        margin-top: 30px;
+        width: 320px; 
+    }
+
+    .links {
+        position: relative;
+        display: block;
+        margin-bottom: 25px;
+        padding: 4px;
+        text-decoration: none;
+        text-align: center;
+        font-family: "Delius", system-ui;
+        font-size: 1.7em;
+        color: #552D28;
+        background-color: #FFE5E9;
+        border-radius: 25px;
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.250);
+        text-shadow: 0px 0px 2px rgba(83, 83, 83, 0.150);
+        border: 2px solid transparent;
+        animation: teste 1s;
+        z-index: 2;
+    }
+
+    #container2 {
+        position: relative;
+        background-color: transparent;
+        margin: auto;
+        margin-top: -280px;
+        width: 300px;
+        height: 250px;
+    }
+
+    .map-container {
+        position: relative;
+        display: none;
+        width: 330px;
+        height: 370px;
+        background-color: white;
+        z-index: 3;
+        border-radius: 25px 0px 25px 0px;
+        margin: -470px auto;
+    }
+
+    #botao-maps {
+        display: inline-block;
+        padding-top: 12px;
+        width: 300px;
+        height: 33px;
+        transform: translate(15px, 310px);
+        border-radius: 0px 0px 25px 0px;
+        background-color: #FFADB9;
+        text-decoration: none;
+        font-family: fonte2;
+        font-size: 1.1em;
+        color: white;
+        text-align: center;
+    }
+
+    #botao-maps:hover, #botao-maps:focus {
+        background-color: #FFE5E9;
+        color:#552D28;
+        text-decoration: underline;
+    }
+
+    #botao-maps:active {
+        background-color: #FFADB9;
+        color: white;
+    }
+
+    .map-container iframe {
+        position: absolute;
+        margin: auto;
+        padding-bottom: 40px;
+        top: 50%;
+        left: 50%;
+        width: 300px;
+        height: 300px;
+        transform: translate(-50%, -50%);
+        border-radius: 25px 0px 25px 0px;
+        border: 0px;
+        box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.274);
+        pointer-events: none;
+    }
+</style>
+
+</head>
+<body>
+    <div id="fundo-logo"></div>
+
+    </div>
+<div>
+    <img src="imagens/logo.png" alt="Logo" class="container">
+</div>
+<div id="container1">
+    <a href="https://www.instagram.com/deliciasdalauvirtual?igsh=MWVmaWw2cGY0Zm9wdw==" target="_blank" class="links">Instagram</a>
+    <a href="menu-catalogo.html" target="_self" class="links">Catálogo</a>
+    <a href="#" target="_blank" class="links" id="maps">Nossa localização</a>
+    <a href="https://www.google.com/search?q=delicias+da+lau&sca_esv=8d507574ebaa0a20&sca_upv=1&authuser=1&sxsrf=ADLYWIIL672W29TGKNmNh27r6uygDBQnSA%3A1724894358560&source=hp&ei=lszPZs2rIIff1sQP4dPYiAU&iflsig=AL9hbdgAAAAAZs_aplp6NSQkDaV2Pa1uOM9jGOfQ2p9h&oq=deli&gs_lp=Egdnd3Mtd2l6IgRkZWxpKgIIADIKECMYgAQYJxiKBTIKEAAYgAQYQxiKBTILEAAYgAQYsQMYyQMyCxAuGIAEGMcBGK8BMgsQABiABBiSAxiKBTILEAAYgAQYkgMYigUyCBAAGIAEGLEDMggQABiABBixAzIKEAAYgAQYQxiKBTIIEAAYgAQYsQNIvwhQAFjMA3AAeACQAQCYAY8BoAGtBKoBAzAuNLgBA8gBAPgBAZgCBKACvQTCAgwQABiABBhDGIoFGArCAgsQABiABBixAxiDAcICBRAAGIAEwgIFEC4YgATCAggQLhiABBixA8ICERAuGIAEGLEDGNEDGIMBGMcBmAMAkgcDMC40oAfYJQ&sclient=gws-wiz#lrd=0x9527351c10aba45b:0xf99968f0fe2af3dc,3,,,," target="_blank" class="links"> Nos avalie no Google</a>
+</div>
+    <div class="map-container" id="mapContainer">
+        <a href="https://maps.app.goo.gl/b4TmRh27qAr65t848" target="_blank" id="botao-maps">Conheça nossa localização!</a>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14135.714733390842!2d-48.7099278!3d-27.6576781!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9527351c10aba45b%3A0xf99968f0fe2af3dc!2sDel%C3%ADcias%20Da%20Lau%20Virtual!5e0!3m2!1spt-BR!2sbr!4v1724897104614!5m2!1spt-BR!2sbr"></iframe>  
+    </div>
+<script>
+    // Mostra ou esconde o mapa quando o botão é clicado
+    document.getElementById('maps').addEventListener('click', function(event) {
+        event.preventDefault(); // Previne a ação padrão do link
+        var mapContainer = document.getElementById('mapContainer');
+        if (mapContainer.style.display === 'none' || mapContainer.style.display === '') {
+            mapContainer.style.display = 'block'; // Mostra o mapa
+        } else {
+            mapContainer.style.display = 'none'; // Esconde o mapa
+        }
+    });
+
+    // Fecha o mapa ao clicar fora dele
+    document.addEventListener('click', function(event) {
+        var mapContainer = document.getElementById('mapContainer');
+        var mapsButton = document.getElementById('maps');
+
+        if (mapContainer.style.display === 'block' && 
+            !mapContainer.contains(event.target) && 
+            event.target !== mapsButton) {
+            mapContainer.style.display = 'none'; // Esconde o mapa
+        }
+    });
+</script>
+</body>
+</html>

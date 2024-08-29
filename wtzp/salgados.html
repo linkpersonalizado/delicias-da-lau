@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="brigadeiro.ico" type="image/x-icon">
+    <title>Delicias da Lau</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+    
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    ::-webkit-scrollbar {width: 0px; height: 0px;}
+
+    body {
+        position: relative;
+        background-image: url(imagens/fundo.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    div.fundo-logo {
+        display: inline;
+        position: absolute;
+        width: 268px;
+        height: 125px;
+        top: 18px;
+        left: 50%;
+        transform: translate(-50%);
+        border-radius: 50%;
+        box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.350);
+    }
+
+    .container {
+        position: relative;
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+        width: 300px;
+    }
+
+    div#menu-salgados {
+        text-align: center;
+        background-color: #fdf0f2b6;
+        width: 300px;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 16px;
+        padding-bottom: 15px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.363);
+        
+    }
+
+    div h1 {
+        margin: 10px;
+        padding-top: 10px;
+        font-family: "Delius", system-ui;
+        font-size: 1.8em;
+        color: #552D28;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.150);
+        text-decoration: underline;
+    }
+
+    div ul {
+        font-family: "Delius", system-ui;
+        font-size: 1.2em;
+        font-weight: 600;
+        color: #552D28;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.100);
+        
+        list-style:none ;
+    }
+
+    div li {
+        margin: 12px;
+    }
+
+    .valor {
+        font-family: "Titillium Web", sans-serif;
+        font-size: 1.4em;
+        font-weight: bold;
+    }
+
+    div a.link {
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 1.6em;
+        background-color: #00c8ff;
+        color: white;
+        text-decoration: none;
+        width: 200px;
+        padding: 10px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.308);
+    }
+
+    div a.link:hover, div a.link:focus {
+        background-color: #4dd8ff;
+        color: white;
+        text-decoration: underline;
+    }
+
+    div a.link:active {
+        background-color: #FFE5E9;
+        color: #552D28;
+        text-decoration: none;
+    }
+
+    div#icones {
+        margin: auto;
+        width: 136px;
+    }
+
+    .icone {
+    display: inline-block;
+        margin: auto;
+        width: 45px;
+        padding: 0px 10px;
+        margin-bottom: 20px;
+    }
+
+</style>
+
+</head>
+<body>
+    <div class="fundo-logo"></div>
+
+    </div>
+<div>
+    <img src="imagens/logo.png" alt="Logo" class="container">
+</div>
+<div id="menu-salgados">
+    <h1>Salgados fritos</h1>
+    <ul>
+        <li>Bolinha de queijo</li>
+        <li>Coxinha de calabresa com queijo</li>
+        <li>Coxinha de frango</li>
+        <li>Lajotinha de queijo e presunto</li>
+        <li>Pastel (carne e frango)</li>
+        <li>Risoles (carne e frango)</li>
+    </ul>
+    <p class="valor">R$:65,00 o cento</p>
+    <p class="valor">R$:35,00 meio cento</p>
+    <a href="https://api.whatsapp.com/send?phone=554896168414&fbclid=PAZXh0bgNhZW0CMTEAAaY_GuKrPnXuazreB4-X44MFfcT731FeBbJEt2nX4mUcUSfFK_SuvIY2zPg_aem_b7CmHCEOiO_e-aYojd6bKA" target="_blank" class="link">Faça já seu pedido!</a>
+</div>
+<div id="icones">
+    <a href="menu-catalogo.html"><img src="imagens/botao-volte.png" alt="Botão voltar" class="icone"></a>
+    <a href="index.html"><img src="imagens/botao-home.png" alt="Botão Home" class="icone"></a>
+</div>
+</body>
+</html>
